@@ -1,0 +1,156 @@
+nav ul {
+    list-style-type: none;
+    overflow: scroll;
+	background-color: rgb(51,51,51);
+}
+  
+nav li {
+    /* Anchoring side on-screen */
+    float: left;
+    margin: 0px;
+    padding: 0px;
+}
+  
+nav li a {
+    display: block;
+    color: rgb(255,255,255);
+    text-align: center;
+    padding: 14px 16px;
+    /*removes link underline*/
+    text-decoration: none;
+}
+  
+nav li a:hover {
+    background-color: rgb(0,0,0);
+}
+
+nav li a:focus {
+    background-color: rgb(0,0,0);
+}
+
+nav li a:focus.current {
+    color: rgb(255,255,255)
+}
+
+nav li a.current {
+    background: rgb(255, 178, 10);
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+    /* slightly-increases distance between text and underline */
+    /* aesthetically-preferrable but not very well-supported on mobile browsers */
+    text-underline-position: under;
+}
+
+header h1{
+    color: rgb(0,0,0);
+    border-style: solid;
+    display: block;
+    padding: 3px;
+    text-decoration: underline;
+}
+
+/* See NCSU link in ReadMe regarding implementation */
+a.skip-to-cont {
+    left:-999px;
+    position: absolute;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow:hidden;
+    color: rgb(255,0,0);
+}
+
+a.skip-to-cont:focus, a.skip-to-cont:active{
+    left: auto;
+    top: auto;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    padding: 5px;
+}
+
+/* More general, but mainly used for the gallery page */
+/* Not perfect, but it's pretty good for now. */
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2px;
+}
+
+/* including height:100% here makes everything vanish; yikes */
+/* and setting height and width to 1000px above and doing h+w 100% looks ugly */
+.grid-container img {
+    width:100%;
+}
+
+/* Specifically for the staff photos on the employment page */
+
+/*
+.grid-container-staff-photos{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2px;
+    height: 480px;
+    width: 1025px;
+} */
+.container-staff-photos{
+    display: block;
+    height: 480px;
+    width: 1025px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-staff-photos img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/* for employment page */
+.job-panel {
+    /*background-color: rgb(221,224,223);*/
+    /*background-color: #2C75FF;*/
+    background-color: rgb(255,255,255);
+    border-style: solid;
+    border-width: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+/* Font Awesome */
+.fas {
+    background-color: #ffcb05;
+    padding: 2px;
+    border-style: solid;
+}
+
+.collegiate-entry{
+    border-style: solid;
+    border-width: 2px;
+    margin: 2px;
+}
+
+.collegiate-entry p{
+    margin: 3px;
+    padding: 1px;
+}
+
+.collegiate-entry h3{
+    margin: 5px;
+    padding: 3px;
+}
+
+.header-title {
+    background-image: url("../images/backgrounds/stonehaven.png");
+}
+
+#go-blue-stretch-banner {
+    width: 80%;
+}
+
+#academic-plots img{
+    display: inline-block;
+}
