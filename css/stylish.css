@@ -174,7 +174,8 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
 }
 
 #go-blue-stretch-banner {
-    width: 80%;
+    width: 100%;
+    height: auto;
 }
 
 #academic-plots img{
