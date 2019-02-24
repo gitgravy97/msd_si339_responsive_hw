@@ -71,16 +71,27 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
 }
 
 /* Gallery Code */
-@media only screen and (min-width: 600px){
+@media only screen and (min-width: 1000px){
     .grid-container-gallery{
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 2px;
     }
-    /* including height:100% here makes everything vanish; yikes */
-    /* and setting height and width to 1000px above and doing h+w 100% looks ugly */
     .grid-container-gallery img {
         width:100%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 999px){
+    .grid-container-gallery{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 2px;
+    }
+    .grid-container-gallery img {
+        width:100%;
+        height: auto;
     }
 }
 
@@ -90,20 +101,11 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
         grid-template-columns: auto auto;
         grid-gap: 2px;
     }
-    /* including height:100% here makes everything vanish; yikes */
-    /* and setting height and width to 1000px above and doing h+w 100% looks ugly */
     .grid-container-gallery img {
         width:100%;
+        height: auto;
     }
 }
-
-/*
-@media only screen and (max-width: 450px) {
-    body {
-      background-color: lightblue;
-    }
-} */
-
 /* End: Gallery Code */
 
 
