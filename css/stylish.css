@@ -72,7 +72,7 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
 
 /* More general, but mainly used for the gallery page */
 /* Not perfect, but it's pretty good for now. */
-.grid-container{
+.grid-container-gallery{
     display: grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 2px;
@@ -80,20 +80,37 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
 
 /* including height:100% here makes everything vanish; yikes */
 /* and setting height and width to 1000px above and doing h+w 100% looks ugly */
-.grid-container img {
+.grid-container-gallery img {
+    width:100%;
+}
+
+.grid-container-skills{
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 2px;
+}
+.grid-container-skills img{
     width:100%;
 }
 
 /* Specifically for the staff photos on the employment page */
 
 /*
+.flex-container-staff-photos {
+    display: flex;
+}
+*/
+
 .grid-container-staff-photos{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto, auto, auto, auto;
     grid-gap: 2px;
-    height: 480px;
-    width: 1025px;
-} */
+}
+.grid-container-staff-photos img{
+    width: 100%;
+}
+
+/*
 .container-staff-photos{
     display: block;
     height: 480px;
@@ -106,7 +123,7 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
 .container-staff-photos img{
     max-height: 100%;
     max-width: 100%;
-}
+} */
 
 /* for employment page */
 .job-panel {
