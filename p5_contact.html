@@ -39,13 +39,19 @@
 
         <!-- note to self, alt="" okay as the img doesn't convey meaning not found elsewhere,
             but intentionality of lacking the alt text is clear -->
-        <p>Interested in reaching out?</p>
-        <p>Got an opportunity in mind?</p>
-        <p>Interested in learning more?</p>
+        <p>Interested in reaching out?<br>Got an opportunity in mind?<br>Interested in learning more?</p>
 
-        <!-- When learned, insert HTML contact forum-->
         <p>The best way to initiate contact is to connect with me on LinkedIn and fill out the brief forum below:</p>
-        <p>[Forum Not Yet Implemented]</p>
+        <form action="https://formspree.io/mcshaned@umich.edu" method="POST">
+            <label>Name: <input type="text" name="name"></label><br>
+            <label>Email: <input type="email" name="_replyto"></label><br>
+            <label>Reason for Contact:<br>
+                <textarea name="purpose" id="contact-forum-purpose" cols="50" rows="5" wrap="hard"></textarea>
+            </label><br>
+            <label><input type="submit" value="Send"></label><br>
+        </form>
+
+        <br>
 
         <div id="contact-icon-row">
         <a href="https://www.linkedin.com/in/mccoy-doherty-823342157/">
