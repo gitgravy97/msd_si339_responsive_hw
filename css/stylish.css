@@ -178,10 +178,22 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
     margin-top: 3px;
 }
 
-#flex-container-skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
+/* Skills Section */
+@media only screen and (min-width: 910px){
+    #flex-container-skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .skills-pane {
+        flex: 1;
+    }
+}
+@media only screen and (max-width: 909px){
+    #flex-container-skills {
+        display: flex;
+        flex-direction: column;
+    }   
 }
 
 /* Hobbies Section */
@@ -191,9 +203,8 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
         flex-direction: row;
         justify-content: stretch;
     }
-    
     #flex-container-hobbies img{
-        flex-grow: 1;
+        flex: 1;
         max-width: 100%;
         height: auto;
         min-height: 350px;
@@ -210,20 +221,6 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
         height: auto;
         min-height: 350px;
     }
-}
-
-/* Skills Section */
-@media only screen and (min-width: 910px){
-    #flex-container-skills {
-        display: flex;
-        flex-direction: row;
-    }    
-}
-@media only screen and (max-width: 909px){
-    #flex-container-skills {
-        display: flex;
-        flex-direction: column;
-    }    
 }
 /*==================================================*/
 
