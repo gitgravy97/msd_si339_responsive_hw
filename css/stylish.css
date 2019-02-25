@@ -141,7 +141,8 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
 /*  Note - this is actually assigned for just the photo at the bottom.
     on one hand, reformatting is a good idea, but removing the photo for other icons likely better
     as an end-goal anyway */
-.grid-container-skills{
+/*
+    .grid-container-skills{
     display: grid;
     grid-template-columns: auto;
     grid-gap: 2px;
@@ -150,6 +151,7 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
     width:50%;
     height: auto;
 }
+*/
 
 .p4-pane {
     border-color: #000000;
@@ -179,8 +181,38 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
 #flex-container-skills {
     display: flex;
     flex-direction: row;
+    justify-content: stretch;
 }
 
+/* Hobbies Section */
+@media only screen and (min-width: 830px){
+    #flex-container-hobbies {
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+    
+    #flex-container-hobbies img{
+        flex-grow: 1;
+        max-width: 100%;
+        height: auto;
+        min-height: 350px;
+    }
+}
+@media only screen and (max-width: 830px){
+    #flex-container-hobbies {
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+    }
+    #flex-container-hobbies img{
+        max-width: 100%;
+        height: auto;
+        min-height: 350px;
+    }
+}
+
+/* Skills Section */
 @media only screen and (min-width: 910px){
     #flex-container-skills {
         display: flex;
@@ -193,18 +225,6 @@ a.skip-to-cont:focus, a.skip-to-cont:active{
         flex-direction: column;
     }    
 }
-
-/*@media only screen and (max-width: 999px){
-    .grid-container-gallery{
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-gap: 2px;
-    }
-    .grid-container-gallery img {
-        width:100%;
-        height: auto;
-    }
-}*/
 /*==================================================*/
 
 /*========== P6 / Gallery Code - Ft. Responsive ==========*/
